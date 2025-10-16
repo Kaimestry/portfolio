@@ -61,6 +61,7 @@ nav a:hover{ /*purple bar below*/
 
 #ham_menu{
     display: none;
+    cursor: pointer;
 }
 
 /* SEARCH BAR */

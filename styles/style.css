@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -11,10 +13,69 @@
 }
 
 body{
+    font-family: 'Nunito';
     background-color: var(--black);
     color: var(--white);
 }
-
+/* NAV BAR */
 header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; /*every child element will clip mask to this*/
+    /**background-color: beige;**/
+}
+
+nav, nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a, header h2{
+    color: var(--white);
+    text-decoration: none;
+    padding: .6rem .7rem;
+    border: none;
+}
+
+nav a:hover{ /*purple bar below*/
+    border-bottom: 6px solid var(--purple);
+}
+
+/* LOGO */
+.nav_logo{
+    color: var(--purple);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav_logo:hover{
+    color: var(--white);
+}
+
+/* SEARCH BAR */
+.search_bar input, .search_bar button{
+    border: none;
+    padding: .3rem;
+    border-radius: 10px;
+}
+
+.search_bar button{
+    background: none;
+    color: var(--white);
+}
+
+.search_bar button:hover{
+    color: var(--purple);
+}
+
+/* CTA BUTTON */
+.cta{
+    background-color: var(--purple);
+    padding-block: 100px;
+}
+
+.cta:hover{
+    color: var(--black);
 }

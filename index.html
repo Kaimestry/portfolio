@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
     <!-- CSS FILES -->
     <link rel="stylesheet" href="styles/style.css"> <!-- main -->
     <link rel="stylesheet" href="styles/index.css"> <!-- main -->
@@ -12,18 +15,17 @@
 <body>
     <header>
         <h2 class="nav_logo">PAO MOVIES</h2>
+        <form action="" class="search_bar">
+            <input type="text" placeholder="Search...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         <nav>
-            <form action="">
-                <input type="text" placeholder="Search...">
-                <button><i>S</i></button>
-            </form>
             <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Series</a></li>
+                <li><a href="#">Cagetory</a></li>
+                <li><a href="#">Trending</a></li>
                 <li><a href="#">My List</a></li>
+                <li><a class="cta sign_up" href="#">Sign Up</a></li>
             </ul>
-            <a class="cta" href="#"><button>Sign Up</button></a>
         </nav>
     </header>
 </body>

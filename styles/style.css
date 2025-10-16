@@ -25,6 +25,10 @@ header{
     overflow: hidden; /*every child element will clip mask to this*/
     /**background-color: beige;**/
 }
+header a{
+    color: var(--white);
+    text-decoration: none;
+}
 
 nav, nav ul{
     display: flex;
@@ -34,8 +38,7 @@ nav, nav ul{
 }
 
 nav a, header h2{
-    color: var(--white);
-    text-decoration: none;
+
     padding: .6rem .7rem;
     border: none;
 }

@@ -119,7 +119,7 @@ nav a:hover{ /*purple bar below*/
     nav li{
         text-align: center;
     }
-    .search_bar input{
+    .search_bar input{ 
         width: 45vw;
     }
 }
@@ -155,6 +155,6 @@ nav a:hover{ /*purple bar below*/
         padding-block: .5rem;
     }
     .search_bar input{
-        width: 80vw;
+        width: 60vw;
     }
 }

@@ -15,7 +15,7 @@
 /* HERO SECTION */
 #hp-herosection{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.299) 2%, rgba(23, 25, 32, 1) 100%),
-                url("../images/example.jpg");
+                url("/images/example.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

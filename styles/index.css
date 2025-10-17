@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black: #171920;
+    --purple: #9259E9;
+    --white: #FFFFFF;
+}
+
+/* HERO SECTION */
+#hp-herosection{
+    background: linear-gradient(180deg,rgba(18, 17, 19, 0) 0%, rgba(23, 25, 32, 1) 100%), 
+                url("/images/example.jpg");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.herosection-elements{
+    margin: 3%;
+}
+
+#hp-herosection .btn-group{
+    margin-block: .2rem;
+}

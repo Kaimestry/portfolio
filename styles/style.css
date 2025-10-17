@@ -10,6 +10,7 @@
     --black: #171920;
     --black-50: #17192067;
     --purple: #9259E9;
+    --purple-50: #9359e96d;
     --white: #FFFFFF;
 }
 
@@ -17,6 +18,10 @@ body{
     font-family: 'Nunito';
     background-color: var(--black);
     color: var(--white);
+}
+
+a{
+    text-decoration: none;
 }
 /* NAV BAR */
 header{
@@ -28,7 +33,6 @@ header{
 }
 header a{
     color: var(--white);
-    text-decoration: none;
 }
 
 nav, nav ul{
@@ -100,18 +104,39 @@ nav a:hover{ /*purple bar below*/
 
 /* REUSABLE STYLED BTN */
 .primary-btn, .secondary-btn, .icon-btn{
-    border: 2px solid var(--black);
+    border: 2px solid var(--purple);
     background-color: var(--purple);
     text-transform: uppercase;
     color: var(--white);
     padding: .5rem .8rem;
     border-radius: 8px;
+    font-size: 20px;
 }
 
 .secondary-btn, .icon-btn{
     background-color: var(--black-50);
-    border: 1.5px solid #9259E9;
 }
+
+
+/* HOVER EFFECT */
+.primary-btn:hover, .secondary-btn:hover, .icon-btn:hover{
+    opacity: 0.6;
+}
+
+/* TEXT ELEMENTS */
+.title{
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--purple);
+}
+
+
+
+
 
 /* RESPONSIVE */
 @media (max-width: 720px) {
@@ -137,6 +162,16 @@ nav a:hover{ /*purple bar below*/
     }
     .search_bar input{ 
         width: 45vw;
+    }
+    /* BTN AND TEXT */
+    .primary-btn, .secondary-btn, .icon-btn{
+        font-size: .7rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .subtitle{
+        font-size: .8rem;
     }
 }
 

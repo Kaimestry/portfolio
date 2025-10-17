@@ -14,10 +14,12 @@
 
 /* HERO SECTION */
 #hp-herosection{
-    background: linear-gradient(180deg,rgba(18, 17, 19, 0) 0%, rgba(23, 25, 32, 1) 100%), 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.299) 2%, rgba(23, 25, 32, 1) 100%),
                 url("/images/example.jpg");
     background-size: cover;
-    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -29,4 +31,16 @@
 
 #hp-herosection .btn-group{
     margin-block: .2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+    #hp-herosection{
+        height: 50vh;
+    }
+}
+
+/* RESPONSIVE PHONE*/
+@media (max-width: 430px) {
+
 }

@@ -103,18 +103,24 @@ nav a:hover{ /*purple bar below*/
 }
 
 /* REUSABLE STYLED BTN */
-.primary-btn, .secondary-btn, .icon-btn{
+.primary-btn, .secondary-btn, .icon-btn , .scroll-btn{
     border: 2px solid var(--purple);
     background-color: var(--purple);
     text-transform: uppercase;
     color: var(--white);
     padding: .5rem .8rem;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .secondary-btn, .icon-btn{
     background-color: var(--black-50);
+}
+
+.scroll-btn{
+    background: none;
+    border: none;
 }
 
 
@@ -125,11 +131,12 @@ nav a:hover{ /*purple bar below*/
 
 /* TEXT ELEMENTS */
 .title{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .subtitle{
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 800;
     color: var(--purple);
 }
@@ -146,10 +153,6 @@ nav a:hover{ /*purple bar below*/
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    #ham_menu{
-        display: block;
-        margin-inline: 1rem;
-    }
     nav ul{
         width: 100vw;
         display: flex;
@@ -160,9 +163,18 @@ nav a:hover{ /*purple bar below*/
     nav li{
         text-align: center;
     }
+    nav a:hover{ 
+        border: none;
+        color: var(--purple);
+
+    }
+    .search_bar{
+        margin-right: 15px;
+    }
     .search_bar input{ 
         width: 45vw;
     }
+
     /* BTN AND TEXT */
     .primary-btn, .secondary-btn, .icon-btn{
         font-size: .7rem;

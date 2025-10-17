@@ -125,7 +125,7 @@ nav a:hover{ /*purple bar below*/
 }
 
 /* RESPONSIVE PHONE*/
-@media (max-width: 410px) {
+@media (max-width: 430px) {
     /* NAVBAR */
     header{
         flex-direction: column;

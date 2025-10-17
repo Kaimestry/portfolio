@@ -6,16 +6,10 @@
     box-sizing: border-box;
 }
 
-:root{
-    --black: #171920;
-    --purple: #9259E9;
-    --white: #FFFFFF;
-}
-
 /* HERO SECTION */
 #hp-herosection{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.299) 2%, rgba(23, 25, 32, 1) 100%),
-                url("../images/example.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(23, 25, 32, 1) 100%),
+                url("../images/example-white.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,6 +25,15 @@
 
 #hp-herosection .btn-group{
     margin-block: .2rem;
+}
+
+#hp-herosection .subtitle{
+    background-color: var(--black-50);
+    padding: 2px 10px;
+}
+
+#hp-herosection .subtitle , .title{
+    margin-block: 5px;
 }
 
 /* RESPONSIVE */

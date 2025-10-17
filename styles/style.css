@@ -8,7 +8,7 @@
 
 :root{
     --black: #171920;
-    --black-50: #17192067;
+    --black-50: #17192097;
     --purple: #9259E9;
     --purple-50: #9359e96d;
     --white: #FFFFFF;
@@ -206,6 +206,7 @@ nav a:hover{ /*purple bar below*/
         padding-block: .5rem;
     }
     .search_bar input{
-        width: 60vw;
+        width: 70vw;
+        margin-bottom: 10px;
     }
 }

@@ -40,11 +40,6 @@
 }
 
 /* TRENDING LIST */
-.movie-cover{
-    width: 20vw;
-    aspect-ratio: 2/3; /* or your custom ratio */
-}
-
 .list-container{
     display: flex;
     flex-direction: row;
@@ -55,18 +50,49 @@
     flex-direction: row;
     width: 100%;
     overflow: hidden;
+    border: 1px solid red;
+}
+
+.movie-preview{
+    flex: 0 0 25%; /* ← 4 items visible */
+    box-sizing: border-box;
+    margin: 0; /* optional: remove gaps */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-preview figcaption{
+    background-color: darkslateblue;
+}
+
+.movie-cover{
+    width: 90%; 
+    aspect-ratio: 2/3; /* or your custom ratio */
 }
 
 /* RESPONSIVE */
+@media (max-width: 900px) {
+    #hp-herosection{
+        height: 40vh;
+    }
+}
+
 @media (max-width: 720px) {
     #hp-herosection{
-        height: 50vh;
+        height: 30vh;
+    }
+    .movie-preview{
+        flex: 0 0 33%; /* ← 3 items visible */
     }
 }
 
 /* RESPONSIVE PHONE*/
 @media (max-width: 430px) {
     #hp-herosection{
-        height: 40vh;
+        height: 20vh;
+    }
+    .movie-preview{
+        flex: 0 0 50%; /* ← 2 items visible */
     }
 }

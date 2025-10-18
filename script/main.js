@@ -7,11 +7,12 @@ function toggle_appear(btn){
     btn.classList.remove('hidden')
 }
 
-//SCROLL BTN
-    const moviesList = document.querySelector('.movies-list');
-    const scrollBtns = document.querySelectorAll('.scroll-btn');
+// SCROLL BUTTONS — supports multiple sliders
+document.querySelectorAll('.list-container').forEach(container => {
+    const moviesList = container.querySelector('.movies-list');
+    const scrollBtns = container.querySelectorAll('.scroll-btn');
 
-    // Get one movie's width (including margin)
+    // Calculate one movie width for this specific list
     function getMovieWidth() {
         const movie = moviesList.querySelector('.movie-preview');
         if (!movie) return 0;
@@ -20,6 +21,7 @@ function toggle_appear(btn){
         return movie.offsetWidth + margin;
     }
 
+    // Add event listeners to the buttons inside this container
     scrollBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const scrollAmount = getMovieWidth();
@@ -30,4 +32,5 @@ function toggle_appear(btn){
             }
         });
     });
+});
 

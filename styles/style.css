@@ -159,10 +159,7 @@ nav a:hover{ /*purple bar below*/
 .list-container{
     display: flex;
     flex-direction: row;
-}
-
-.list-container .scroll-btn{
-    margin-top: 10%;
+    align-items: center;
 }
 
 .movies-list{
@@ -187,9 +184,18 @@ nav a:hover{ /*purple bar below*/
     text-transform: uppercase;
     font-size: 18px;
     width: 80%; /*same to movie cover size*/
-    overflow: hidden;
     text-align: center;
-    margin-top: 10px;
+    /* limit to 2 lines */
+    line-height: 1.2em;      /* height of one line */
+    max-height: 2.4em;       /* 1.2em × 2 lines */
+    overflow: hidden;        /* hide extra text */
+    white-space: normal;     /* allow wrapping */
+    margin-block: 10px;
+}
+
+.rank-highlight{
+    font-family: 'josefin sans';
+    color: var(--purple);
 }
 
 .movie-cover{
@@ -248,9 +254,6 @@ nav a:hover{ /*purple bar below*/
     .movie-preview{
         flex: 0 0 33%; /* ← 3 items visible */
     }
-    .list-container .scroll-btn{
-        margin-top: 13%;
-    }
 }
 
 /* RESPONSIVE PHONE*/
@@ -295,8 +298,5 @@ nav a:hover{ /*purple bar below*/
     /* SLIDER */
     .movie-preview{
         flex: 0 0 50%; /* ← 2 items visible */
-    }
-    .list-container .scroll-btn{
-        margin-top: 20%;
     }
 }

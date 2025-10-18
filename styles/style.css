@@ -148,6 +148,7 @@ nav a:hover{ /*purple bar below*/
 
 .section-container{
     position: relative;
+    margin-block: 5%;
 }
 
 .section-title{
@@ -196,6 +197,7 @@ nav a:hover{ /*purple bar below*/
 .rank-highlight{
     font-family: 'josefin sans';
     color: var(--purple);
+    margin: 0;
 }
 
 .movie-cover{
@@ -269,7 +271,7 @@ nav a:hover{ /*purple bar below*/
     #ham_menu{
         display: block;
         position: absolute;
-        right: .7rem;
+        left: .7rem;
         top: 15px;
     }
     nav ul{
@@ -285,6 +287,9 @@ nav a:hover{ /*purple bar below*/
     nav .cta {
         display: block;
         padding-block: .5rem;
+    }
+    .search_bar{
+        margin-left: 10%;
     }
     .search_bar input{
         width: 70vw;

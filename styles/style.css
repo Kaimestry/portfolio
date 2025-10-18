@@ -120,6 +120,7 @@ nav a:hover{ /*purple bar below*/
 
 .scroll-btn{
     background: none;
+    height: 5rem;
 }
 
 
@@ -140,8 +141,63 @@ nav a:hover{ /*purple bar below*/
     color: var(--purple);
 }
 
+/* CONTAINER STYLE */
+.container{
+    margin: 5%;
+}
 
+.section-container{
+    position: relative;
+}
 
+.section-title{
+    font-size: 30px;
+    margin: 6.5%;
+}
+
+/* MOVIES SLIDER */
+.list-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.list-container .scroll-btn{
+    margin-top: 10%;
+}
+
+.movies-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.movie-preview{
+    flex: 0 0 25%; /* ← 4 items visible */
+    box-sizing: border-box;
+    margin: 0; /* optional: remove gaps */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-preview figcaption{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 80%; /*same to movie cover size*/
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.movie-cover{
+    border-radius: 10px;
+    border: 3px solid var(--purple);
+    width: 90%; 
+    aspect-ratio: 2/3;
+}
 
 
 /* RESPONSIVE */
@@ -184,10 +240,21 @@ nav a:hover{ /*purple bar below*/
     .subtitle{
         font-size: .8rem;
     }
+    .section-title{
+        margin-left: 10%;
+        font-size: 24px;
+    }
+    /* SLIDER */
+    .movie-preview{
+        flex: 0 0 33%; /* ← 3 items visible */
+    }
+    .list-container .scroll-btn{
+        margin-top: 13%;
+    }
 }
 
 /* RESPONSIVE PHONE*/
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     /* NAVBAR */
     header{
         flex-direction: column;
@@ -219,5 +286,17 @@ nav a:hover{ /*purple bar below*/
     .search_bar input{
         width: 70vw;
         margin-bottom: 10px;
+    }
+    /* TITLES */
+    .section-title{
+        margin-left: 15%;
+        font-size: 18px;
+    }
+    /* SLIDER */
+    .movie-preview{
+        flex: 0 0 50%; /* ← 2 items visible */
+    }
+    .list-container .scroll-btn{
+        margin-top: 20%;
     }
 }
